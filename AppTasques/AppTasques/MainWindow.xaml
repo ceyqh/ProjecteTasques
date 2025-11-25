@@ -6,93 +6,55 @@
         xmlns:local="clr-namespace:AppTasques"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
     <Grid Margin="10, 0, 0, 0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        <!-- Panel izquierdo (formulario) -->
         <Border BorderThickness="0,0,1,0" BorderBrush="Black">
             <StackPanel Margin="0, 0, 10, 0">
                 <TextBlock FontSize="15" FontWeight="Bold" Margin="0, 0, 0, 10">Nova tasca:</TextBlock>
 
                 <Border Margin="0, 0, 5, 5" Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
                     <StackPanel>
-                        <TextBlock >Nom:</TextBlock>
+                        <TextBlock>Nom:</TextBlock>
                     </StackPanel>
                 </Border>
 
-                <TextBox Margin="0, 0, 0, 10"></TextBox>
+                <TextBox x:Name="txtNom" Margin="0,0,0,10"/>
 
-                <TextBlock Margin="0, 0, 0, 5">Descripció:</TextBlock>
-                <TextBox Height="100" Margin="0, 0, 0, 10" TextWrapping="Wrap"></TextBox>
+                <TextBlock Margin="0,0,0,5">Descripció:</TextBlock>
+                <TextBox x:Name="txtDescripcio" Height="100" Margin="0,0,0,10" TextWrapping="Wrap"/>
 
-                <TextBlock Margin="0, 0, 0, 5">Etiqueta:</TextBlock>
-                <TextBox Margin="0, 0, 0, 10"></TextBox>
+                <TextBlock Margin="0,0,0,5">Etiqueta:</TextBlock>
+                <TextBox x:Name="txtEtiqueta" Margin="0,0,0,10"/>
 
-                <TextBlock Margin="0, 0, 0, 5">Data inici (dd/mm/aa):</TextBlock>
-                <TextBox Margin="0, 0, 0, 10"></TextBox>
+                <TextBlock Margin="0,0,0,5">Data inici (dd/mm/aa):</TextBlock>
+                <TextBox x:Name="txtInici" Margin="0,0,0,10"/>
 
-                <TextBlock Margin="0, 0, 0, 5">Data final (dd/mm/aa):</TextBlock>
-                <TextBox Margin="0, 0, 0, 10"></TextBox>
+                <TextBlock Margin="0,0,0,5">Data final (dd/mm/aa):</TextBlock>
+                <TextBox x:Name="txtFinal" Margin="0,0,0,10"/>
 
-                <Button Width="100">Afegir</Button>
+                <Button Width="100" Click="Afegir_Click">Afegir</Button>
             </StackPanel>
         </Border>
-        <Grid Grid.Column="1" Margin="5, 5, 0, 0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="60"></ColumnDefinition>
-                <ColumnDefinition Width="60"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
 
-            <!--
-            <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
-            <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
-            <Border Grid.Column="2" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
-            <Border Grid.Column="3" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
-            <Border Grid.Column="4" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
-            <Border Grid.Column="5" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
-            -->
+        <ListView x:Name="llistaTasques" Grid.Column="1" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nom" Width="120" DisplayMemberBinding="{Binding nom}"/>
+                    <GridViewColumn Header="Descripció" Width="200" DisplayMemberBinding="{Binding descripcio}"/>
+                    <GridViewColumn Header="Etiqueta" Width="100" DisplayMemberBinding="{Binding etiqueta}"/>
+                    <GridViewColumn Header="Inici" Width="80" DisplayMemberBinding="{Binding dataInici}"/>
+                    <GridViewColumn Header="Final" Width="80" DisplayMemberBinding="{Binding dataFinal}"/>
+                    <GridViewColumn Header="Estat" Width="80" DisplayMemberBinding="{Binding estat}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
-            <StackPanel Grid.Column="0">
-                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
-                    <TextBlock FontSize="13">Nom</TextBlock>                    
-                </Border>
-            </StackPanel>
-
-            <StackPanel Grid.Column="1">
-                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
-                    <TextBlock FontSize="13">Descripció</TextBlock>
-                </Border>
-            </StackPanel>
-
-            <StackPanel Grid.Column="2">
-                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
-                    <TextBlock FontSize="13">Etiqueta</TextBlock>
-                </Border>
-            </StackPanel>
-
-            <StackPanel Grid.Column="3">
-                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
-                    <TextBlock FontSize="13">Inici</TextBlock>
-                </Border>
-            </StackPanel>
-
-            <StackPanel Grid.Column="4">
-                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
-                    <TextBlock FontSize="13">Final</TextBlock>
-                </Border>
-            </StackPanel>
-
-            <StackPanel Grid.Column="5">
-                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
-                    <TextBlock FontSize="13">Estat</TextBlock>
-                </Border>
-            </StackPanel>
-        </Grid>
     </Grid>
+
 </Window>

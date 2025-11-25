@@ -24,5 +24,27 @@ namespace AppTasques
         {
             InitializeComponent();
         }
+
+        private void Afegir_Click(object sender, RoutedEventArgs e)
+        {
+            Tasca nova = new Tasca()
+            {
+                nom = txtNom.Text,
+                descripcio = txtDescripcio.Text,
+                etiqueta = txtEtiqueta.Text,
+                dataInici = txtInici.Text,
+                dataFinal = txtFinal.Text,
+                estat = "Pendent"
+            };
+
+            // Añadirla a la tabla (ListView)
+            llistaTasques.Items.Add(nova);
+
+            txtNom.Clear();
+            txtDescripcio.Clear();
+            txtEtiqueta.Clear();
+            txtInici.Clear();
+            txtFinal.Clear();
+        }
     }
 }
