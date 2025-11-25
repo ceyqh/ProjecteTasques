@@ -9,5 +9,6 @@
     <Grid>
         <TextBlock>Hola</TextBlock>
         <TextBlock>dhwakda</TextBlock>
+        <TextBlock Margin="100">Adios</TextBlock>
     </Grid>
 </Window>
