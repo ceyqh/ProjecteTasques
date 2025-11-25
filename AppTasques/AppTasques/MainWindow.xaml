@@ -8,5 +8,6 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TextBlock>Hola</TextBlock>
+        <TextBlock Margin="100">Adios</TextBlock>
     </Grid>
 </Window>
