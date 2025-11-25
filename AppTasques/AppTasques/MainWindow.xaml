@@ -6,38 +6,93 @@
         xmlns:local="clr-namespace:AppTasques"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="5, 0, 5, 0">
+    <Grid Margin="10, 0, 0, 0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <StackPanel>
-            <TextBlock FontSize="15" FontWeight="Bold" Margin="0, 0, 0, 10">Nova tasca:</TextBlock>
+        <Border BorderThickness="0,0,1,0" BorderBrush="Black">
+            <StackPanel Margin="0, 0, 10, 0">
+                <TextBlock FontSize="15" FontWeight="Bold" Margin="0, 0, 0, 10">Nova tasca:</TextBlock>
 
-            <Border Margin="0, 0, 5, 5" Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
-                <StackPanel>
-                    <TextBlock >Nom:</TextBlock>
-                </StackPanel>
-            </Border>
+                <Border Margin="0, 0, 5, 5" Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock >Nom:</TextBlock>
+                    </StackPanel>
+                </Border>
 
-            <TextBox Margin="0, 0, 5, 10"></TextBox>
+                <TextBox Margin="0, 0, 0, 10"></TextBox>
 
-            <TextBlock Margin="0, 0, 0, 5">Descripció:</TextBlock>
-            <TextBox Height="100" Margin="0, 0, 5, 10" TextWrapping="Wrap"></TextBox>
+                <TextBlock Margin="0, 0, 0, 5">Descripció:</TextBlock>
+                <TextBox Height="100" Margin="0, 0, 0, 10" TextWrapping="Wrap"></TextBox>
 
-            <TextBlock Margin="0, 0, 0, 5">Etiqueta:</TextBlock>
-            <TextBox Margin="0, 0, 5, 10"></TextBox>
+                <TextBlock Margin="0, 0, 0, 5">Etiqueta:</TextBlock>
+                <TextBox Margin="0, 0, 0, 10"></TextBox>
 
-            <TextBlock Margin="0, 0, 0, 5">Data inici (dd/mm/aa):</TextBlock>
-            <TextBox Margin="0, 0, 5, 10"></TextBox>
+                <TextBlock Margin="0, 0, 0, 5">Data inici (dd/mm/aa):</TextBlock>
+                <TextBox Margin="0, 0, 0, 10"></TextBox>
 
-            <TextBlock Margin="0, 0, 0, 5">Data final (dd/mm/aa):</TextBlock>
-            <TextBox Margin="0, 0, 5, 10"></TextBox>
+                <TextBlock Margin="0, 0, 0, 5">Data final (dd/mm/aa):</TextBlock>
+                <TextBox Margin="0, 0, 0, 10"></TextBox>
 
-            <Button Width="100">Afegir</Button>
-        </StackPanel>
-        
-        
+                <Button Width="100">Afegir</Button>
+            </StackPanel>
+        </Border>
+        <Grid Grid.Column="1" Margin="5, 5, 0, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="60"></ColumnDefinition>
+                <ColumnDefinition Width="60"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!--
+            <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
+            <Border Grid.Column="1" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
+            <Border Grid.Column="2" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
+            <Border Grid.Column="3" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
+            <Border Grid.Column="4" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
+            <Border Grid.Column="5" BorderBrush="Black" BorderThickness="0, 0, 1, 0"/>
+            -->
+
+            <StackPanel Grid.Column="0">
+                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                    <TextBlock FontSize="13">Nom</TextBlock>                    
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                    <TextBlock FontSize="13">Descripció</TextBlock>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2">
+                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                    <TextBlock FontSize="13">Etiqueta</TextBlock>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="3">
+                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                    <TextBlock FontSize="13">Inici</TextBlock>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="4">
+                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                    <TextBlock FontSize="13">Final</TextBlock>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="5">
+                <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                    <TextBlock FontSize="13">Estat</TextBlock>
+                </Border>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
