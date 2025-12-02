@@ -37,14 +37,28 @@ namespace AppTasques
                 estat = "Pendent"
             };
 
-            // Añadirla a la tabla (ListView)
+            // afegir a la taula
             llistaTasques.Items.Add(nova);
 
+            // netejar camps
             txtNom.Clear();
             txtDescripcio.Clear();
             txtEtiqueta.Clear();
             txtInici.Clear();
             txtFinal.Clear();
+        }
+
+        private void llistaTasques_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            //MessageBox.Show((llistaTasques.SelectedItem as Tasca).nom);
+
+            if (llistaTasques.SelectedItem as Tasca != null)
+            {
+                TabItem ti = new TabItem();
+                ti.Header = (llistaTasques.SelectedItem as Tasca).nom;
+                Pestanyes.Items.Add(ti);
+                Pestanyes.SelectedIndex = 1;
+            }
         }
     }
 }

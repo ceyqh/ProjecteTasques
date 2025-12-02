@@ -30,3 +30,7 @@ C:\Users\Alex Campos\Desktop\ProjecteKanban2\ProjecteTasques\AppTasques\AppTasqu
 C:\Users\Alex Campos\Desktop\ProjecteKanban2\ProjecteTasques\AppTasques\AppTasques\obj\Debug\AppTasques.csproj.CoreCompileInputs.cache
 C:\Users\Alex Campos\Desktop\ProjecteKanban2\ProjecteTasques\AppTasques\AppTasques\obj\Debug\AppTasques.exe
 C:\Users\Alex Campos\Desktop\ProjecteKanban2\ProjecteTasques\AppTasques\AppTasques\obj\Debug\AppTasques.pdb
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\ProjecteTasques\AppTasques\AppTasques\obj\Debug\Login.g.cs
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\ProjecteTasques\AppTasques\AppTasques\obj\Debug\Login.baml
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\ProjecteTasques\AppTasques\AppTasques\obj\Debug\Register.g.cs
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\ProjecteTasques\AppTasques\AppTasques\obj\Debug\Register.baml
