@@ -57,8 +57,14 @@ namespace AppTasques
                 TabItem ti = new TabItem();
                 ti.Header = (llistaTasques.SelectedItem as Tasca).nom;
                 Pestanyes.Items.Add(ti);
-                Pestanyes.SelectedIndex = 1;
+                Pestanyes.SelectedIndex = 2;
             }
+        }
+
+        private void FinestraNovaTasca(object sender, RoutedEventArgs e)
+        {
+            NovaTasca nt = new NovaTasca();
+            nt.Show();
         }
     }
 }

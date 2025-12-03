@@ -54,3 +54,5 @@ C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\CopiaSeguretat\ProjecteTasque
 C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\CopiaSeguretat\ProjecteTasques\AppTasques\AppTasques\obj\Debug\AppTasques.csproj.CoreCompileInputs.cache
 C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\CopiaSeguretat\ProjecteTasques\AppTasques\AppTasques\obj\Debug\AppTasques.exe
 C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\CopiaSeguretat\ProjecteTasques\AppTasques\AppTasques\obj\Debug\AppTasques.pdb
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\ProjecteTasques\AppTasques\AppTasques\obj\Debug\NovaTasca.g.cs
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\ProjecteTasques\AppTasques\AppTasques\obj\Debug\NovaTasca.baml
