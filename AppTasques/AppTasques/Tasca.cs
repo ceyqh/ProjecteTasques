@@ -14,6 +14,6 @@ namespace AppTasques
         public string etiqueta { get; set; }
         public string dataInici {  get; set; }
         public string dataFinal { get; set; }
-        public string estat { get; set; } = "Pendent";
+        public string estat { get; set; }
     }
 }

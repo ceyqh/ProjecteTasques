@@ -19,9 +19,29 @@ namespace AppTasques
     /// </summary>
     public partial class NovaTasca : Window
     {
+        public event Action<Tasca> TascaAfegida;
+
         public NovaTasca()
         {
             InitializeComponent();
+        }
+
+        private void AfegirNovaTasca(object sender, RoutedEventArgs e)
+        {
+            Tasca nova = new Tasca()
+            {
+                nom = txtNom.Text,
+                descripcio = txtDescripcio.Text,
+                etiqueta = txtEtiqueta.Text,
+                dataInici = txtInici.Text,
+                dataFinal = txtFinal.Text,
+                estat = "Pendent"
+            };
+
+            TascaAfegida?.Invoke(nova);
+
+            this.Close();
+
         }
     }
 }

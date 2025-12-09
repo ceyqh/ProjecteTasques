@@ -24,13 +24,6 @@ namespace AppTasques
             InitializeComponent();
         }
 
-        private void Entrar_Register(object sender, MouseButtonEventArgs e)
-        {
-            Register register = new Register();
-            register.Show();
-            this.Close();
-        }
-
         private void Entrar(object sender, RoutedEventArgs e)
         {
             MainWindow mw = new MainWindow();

@@ -5,33 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppTasques"
         mc:Ignorable="d"
-        Title="NovaTasca" Height="450" Width="800">
+        Title="NovaTasca" Height="450" Width="500">
+
+    <Window.Resources>
+        <Style x:Key="HoverButton" TargetType="Button">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                SnapsToDevicePixels="True">
+
+                            <ContentPresenter
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Margin="0"
+                                    RecognizesAccessKey="True"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="White"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="BorderThickness" Value="1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
-        <StackPanel Margin="0, 0, 10, 0">
+        <StackPanel Margin="10">
             <TextBlock FontSize="15" FontWeight="Bold" Margin="0, 0, 0, 10">Nova tasca:</TextBlock>
 
-            <Border Margin="0, 0, 5, 5" Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
-                <StackPanel>
-                    <TextBlock>Nom:</TextBlock>
-                </StackPanel>
-            </Border>
-
-            <TextBlock>Nom:</TextBlock>
-            <TextBox Margin="0,0,0,10"/>
+            <TextBlock Margin="0,0,0,5">Nom:</TextBlock>
+            <TextBox x:Name="txtNom" Margin="0,0,0,10"/>
 
             <TextBlock Margin="0,0,0,5">Descripció:</TextBlock>
-            <TextBox Height="100" Margin="0,0,0,10" TextWrapping="Wrap"/>
+            <TextBox x:Name="txtDescripcio" Height="100" Margin="0,0,0,10" TextWrapping="Wrap"/>
 
             <TextBlock Margin="0,0,0,5">Etiqueta:</TextBlock>
-            <TextBox Margin="0,0,0,10"/>
+            <TextBox x:Name="txtEtiqueta" Margin="0,0,0,10"/>
 
             <TextBlock Margin="0,0,0,5">Data inici (dd/mm/aa):</TextBlock>
-            <TextBox Margin="0,0,0,10"/>
+            <TextBox x:Name="txtInici" Margin="0,0,0,10"/>
 
             <TextBlock Margin="0,0,0,5">Data final (dd/mm/aa):</TextBlock>
-            <TextBox Margin="0,0,0,10"/>
+            <TextBox x:Name="txtFinal" Margin="0,0,0,10"/>
 
-            <Button Width="100">Afegir</Button>
+            <Button Width="100" Click="AfegirNovaTasca">Afegir</Button>
         </StackPanel>
     </Grid>
 </Window>

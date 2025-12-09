@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,29 +24,19 @@ namespace AppTasques
         public MainWindow()
         {
             InitializeComponent();
-        }
 
-        private void Afegir_Click(object sender, RoutedEventArgs e)
-        {
-            Tasca nova = new Tasca()
+            // Tasqua de prova
+            Tasca exemple = new Tasca()
             {
-                nom = txtNom.Text,
-                descripcio = txtDescripcio.Text,
-                etiqueta = txtEtiqueta.Text,
-                dataInici = txtInici.Text,
-                dataFinal = txtFinal.Text,
+                nom = "Instal·lar el servidor DHCP",
+                descripcio = "Realitzar tots els passos necessaris utilitzant linux",
+                etiqueta = "#Servidor",
+                dataInici = "03/12/2025",
+                dataFinal = "03/12/2025",
                 estat = "Pendent"
             };
 
-            // afegir a la taula
-            llistaTasques.Items.Add(nova);
-
-            // netejar camps
-            txtNom.Clear();
-            txtDescripcio.Clear();
-            txtEtiqueta.Clear();
-            txtInici.Clear();
-            txtFinal.Clear();
+            llistaTasques.Items.Add(exemple);
         }
 
         private void llistaTasques_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -64,6 +55,12 @@ namespace AppTasques
         private void FinestraNovaTasca(object sender, RoutedEventArgs e)
         {
             NovaTasca nt = new NovaTasca();
+
+            nt.TascaAfegida += (tasca) =>
+            {
+                llistaTasques.Items.Add(tasca);
+            };
+
             nt.Show();
         }
     }

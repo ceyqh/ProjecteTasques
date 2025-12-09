@@ -61,9 +61,6 @@
     <Compile Include="NovaTasca.xaml.cs">
       <DependentUpon>NovaTasca.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Register.xaml.cs">
-      <DependentUpon>Register.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Tasca.cs" />
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
@@ -82,10 +79,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="NovaTasca.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Register.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
