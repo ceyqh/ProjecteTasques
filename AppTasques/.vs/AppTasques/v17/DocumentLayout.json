@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\",
+  "WorkspaceRootPath": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|c:\\users\\cescc\\onedrive\\escritorio\\projectetasques\\proves\\projectetasques\\apptasques\\apptasques\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\apptasques\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\apptasques\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\apptasques\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\apptasques\\novatasca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\apptasques\\usuaris.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\usuaris.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|c:\\users\\cescc\\onedrive\\escritorio\\projectetasques\\copia de seguretat important\\apptasques\\apptasques\\usuaris.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\usuaris.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\apptasques\\novatasca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\novatasca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\apptasques\\novatasca.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\apptasques\\novatasca.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\novatasca.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\apptasques\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\apptasques\\editartasca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\editartasca.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 379,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,22 +46,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\AppTasques\\Login.xaml",
-              "RelativeDocumentMoniker": "AppTasques\\Login.xaml",
-              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\AppTasques\\Login.xaml",
-              "RelativeToolTip": "AppTasques\\Login.xaml",
+              "DocumentIndex": 2,
+              "Title": "Usuaris.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\Usuaris.xaml.cs",
+              "RelativeDocumentMoniker": "AppTasques\\Usuaris.xaml.cs",
+              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\Usuaris.xaml.cs",
+              "RelativeToolTip": "AppTasques\\Usuaris.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T09:49:51.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Usuaris.xaml",
+              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\Usuaris.xaml",
+              "RelativeDocumentMoniker": "AppTasques\\Usuaris.xaml",
+              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\Usuaris.xaml",
+              "RelativeToolTip": "AppTasques\\Usuaris.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-03T17:51:45.538Z"
+              "WhenOpened": "2025-12-16T09:21:50.794Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\AppTasques\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\MainWindow.xaml",
               "RelativeDocumentMoniker": "AppTasques\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\AppTasques\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\MainWindow.xaml",
               "RelativeToolTip": "AppTasques\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-25T18:06:27.659Z",
@@ -63,37 +85,51 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\AppTasques\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "AppTasques\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\AppTasques\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\MainWindow.xaml.cs",
               "RelativeToolTip": "AppTasques\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T16:26:22.411Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "NovaTasca.xaml",
-              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\AppTasques\\NovaTasca.xaml",
+              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\NovaTasca.xaml",
               "RelativeDocumentMoniker": "AppTasques\\NovaTasca.xaml",
-              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\AppTasques\\NovaTasca.xaml",
+              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\NovaTasca.xaml",
               "RelativeToolTip": "AppTasques\\NovaTasca.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-02T18:09:03.78Z"
+              "WhenOpened": "2025-12-15T09:40:09.672Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "NovaTasca.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\AppTasques\\NovaTasca.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\NovaTasca.xaml.cs",
               "RelativeDocumentMoniker": "AppTasques\\NovaTasca.xaml.cs",
-              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\Proves\\ProjecteTasques\\AppTasques\\AppTasques\\NovaTasca.xaml.cs",
+              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\NovaTasca.xaml.cs",
               "RelativeToolTip": "AppTasques\\NovaTasca.xaml.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCUAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCkAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T14:34:01.182Z"
+              "WhenOpened": "2025-12-15T09:43:49.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditarTasca.xaml",
+              "DocumentMoniker": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\EditarTasca.xaml",
+              "RelativeDocumentMoniker": "AppTasques\\EditarTasca.xaml",
+              "ToolTip": "C:\\Users\\cescc\\OneDrive\\Escritorio\\ProjecteTasques\\COPIA DE SEGURETAT IMPORTANT\\AppTasques\\AppTasques\\EditarTasca.xaml",
+              "RelativeToolTip": "AppTasques\\EditarTasca.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-15T09:41:46.992Z",
+              "EditorCaption": ""
             }
           ]
         },

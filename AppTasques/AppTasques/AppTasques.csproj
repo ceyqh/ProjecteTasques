@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,13 +56,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EditarTasca.xaml.cs">
+      <DependentUpon>EditarTasca.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="NovaTasca.xaml.cs">
       <DependentUpon>NovaTasca.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProjecteTasquesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjecteTasquesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Tasca.cs" />
+    <Compile Include="Usuaris.xaml.cs">
+      <DependentUpon>Usuaris.xaml</DependentUpon>
+    </Compile>
+    <Page Include="EditarTasca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -79,6 +95,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="NovaTasca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Usuaris.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -101,6 +121,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ProjecteTasquesDataSet.xsc">
+      <DependentUpon>ProjecteTasquesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjecteTasquesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjecteTasquesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjecteTasquesDataSet.xss">
+      <DependentUpon>ProjecteTasquesDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -28,20 +28,34 @@ namespace AppTasques
 
         private void AfegirNovaTasca(object sender, RoutedEventArgs e)
         {
-            Tasca nova = new Tasca()
+            var itemColorEtiqueta = (ComboBoxItem)cbColorEtiqueta.SelectedItem;
+            string valorColorEtiqueta = itemColorEtiqueta.Tag.ToString();
+
+            var itemColorEstat = (ComboBoxItem)cbColorEstat.SelectedItem;
+            string tagColorEstat = itemColorEstat.Content.ToString();
+            string valorColorEstat = "";
+
+            if (tagColorEstat == "Per començar") { valorColorEstat = "#fa5f5f"; }
+            else if (tagColorEstat == "Començat") { valorColorEstat = "#eb7d34"; }
+            else if (tagColorEstat == "Repassar") { valorColorEstat = "#ebeb34"; }
+            else if (tagColorEstat == "Millorar") { valorColorEstat = "#489bfa"; }
+            else if (tagColorEstat == "Finalitzat") { valorColorEstat = "#55eb34"; }
+
+            Tasca novaTasca = new Tasca()
             {
                 nom = txtNom.Text,
                 descripcio = txtDescripcio.Text,
                 etiqueta = txtEtiqueta.Text,
+                colorEtiqueta = valorColorEtiqueta,
                 dataInici = txtInici.Text,
                 dataFinal = txtFinal.Text,
-                estat = "Pendent"
+                estat = tagColorEstat,
+                colorEstat = valorColorEstat
             };
 
-            TascaAfegida?.Invoke(nova);
+            TascaAfegida?.Invoke(novaTasca);
 
-            this.Close();
-
+            //this.Close();
         }
     }
 }

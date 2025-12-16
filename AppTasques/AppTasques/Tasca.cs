@@ -12,8 +12,10 @@ namespace AppTasques
         public string nom {  get; set; }
         public string descripcio { get; set; }
         public string etiqueta { get; set; }
+        public string colorEtiqueta { get; set; }
         public string dataInici {  get; set; }
         public string dataFinal { get; set; }
         public string estat { get; set; }
+        public string colorEstat { get; set; }
     }
 }

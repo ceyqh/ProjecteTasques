@@ -76,3 +76,29 @@ C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\Proves\ProjecteTasques\AppTas
 C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\Proves\ProjecteTasques\AppTasques\AppTasques\obj\Debug\AppTasques.csproj.CoreCompileInputs.cache
 C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\Proves\ProjecteTasques\AppTasques\AppTasques\obj\Debug\AppTasques.exe
 C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\Proves\ProjecteTasques\AppTasques\AppTasques\obj\Debug\AppTasques.pdb
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\Proves\ProjecteTasques\AppTasques\AppTasques\obj\Debug\PaginaLogin.g.cs
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\Proves\ProjecteTasques\AppTasques\AppTasques\obj\Debug\PaginaLogin.baml
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\AppTasques.csproj.AssemblyReference.cache
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\AppTasques.exe.config
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\Login.g.cs
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\MainWindow.g.cs
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\NovaTasca.g.cs
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\App.g.cs
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\AppTasques_MarkupCompile.cache
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\AppTasques_MarkupCompile.lref
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\AppTasques.exe
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\AppTasques.pdb
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\bin\Debug\AppTasques.exe.config
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\bin\Debug\AppTasques.exe
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\bin\Debug\AppTasques.pdb
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\Login.baml
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\MainWindow.baml
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\NovaTasca.baml
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\AppTasques.g.resources
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\AppTasques.Properties.Resources.resources
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\AppTasques.csproj.GenerateResource.cache
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\AppTasques.csproj.CoreCompileInputs.cache
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\EditarTasca.g.cs
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\EditarTasca.baml
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\Usuaris.g.cs
+C:\Users\cescc\OneDrive\Escritorio\ProjecteTasques\COPIA DE SEGURETAT IMPORTANT\AppTasques\AppTasques\obj\Debug\Usuaris.baml
