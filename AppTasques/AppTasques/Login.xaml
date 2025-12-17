@@ -53,10 +53,11 @@
                 <TextBlock FontWeight="Bold"  FontSize="30" TextAlignment="Center" Margin="0, 20, 0, 20" Foreground="#FF272727">INICIAR SESSIÓ</TextBlock>
 
                 <TextBlock FontSize="15" TextAlignment="Center" Margin="0, 0, 0, 5" Foreground="#FF272727">Usuari:</TextBlock>
-                <TextBox FontSize="15" Width="150" Margin="0, 0, 0, 20" BorderBrush="#272727" Foreground="#FF272727" Background="#FFEFEFEA"></TextBox>
+                <TextBox x:Name="txtNom" FontSize="15" Width="150" Margin="0, 0, 0, 20" BorderBrush="#272727" Foreground="#FF272727" Background="#FFEFEFEA"/>
 
                 <TextBlock FontSize="15" TextAlignment="Center" Margin="0, 0, 0, 5" Foreground="#FF272727">Contrasenya:</TextBlock>
-                <PasswordBox FontSize="15" Width="150" BorderBrush="#272727" Background="#FFEFEFEA" Foreground="#FF272727"></PasswordBox>
+                <PasswordBox x:Name="txtContrasenya" FontSize="15" Width="150" BorderBrush="#272727" Background="#FFEFEFEA" Foreground="#FF272727"/>
+
 
                 <Button FontSize="15" Width="70" Margin="0, 40, 0, 0" Click="Entrar" Style="{StaticResource HoverButton}">Entrar</Button>
             </StackPanel>

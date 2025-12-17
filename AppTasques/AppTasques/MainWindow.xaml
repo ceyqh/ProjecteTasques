@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:AppTasques"
         mc:Ignorable="d"
         Title="Gestor de Tasques"
+        Loaded="Window_Loaded"
         WindowState="Maximized" d:DesignHeight="450" d:DesignWidth="1800">
     
 <!--HOLA-->
@@ -130,7 +131,7 @@
                           MouseDoubleClick="llistaTasques_MouseDoubleClick"
                           Foreground="#FF272727"
                           BorderBrush="#FF272727"
-                          ItemsSource="{Binding Afegir}" Background="#FFEFEFEA">
+                          Background="#FFEFEFEA">
 
                     <!-- ESTILS -->
                     <ListView.ItemContainerStyle>

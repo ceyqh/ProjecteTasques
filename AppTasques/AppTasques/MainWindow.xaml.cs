@@ -1,21 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Configuration;
-using System.Data.SqlClient;
-using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace AppTasques
 {
@@ -24,69 +11,41 @@ namespace AppTasques
     /// </summary>
     public partial class MainWindow : Window
     {
-        //SqlConnection laMevaConnexioSQL;
+        public int UsuariId { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
-
-            //string laMevaConnexio = ConfigurationManager.ConnectionStrings["ProjecteTasques.Properties.Settings.ProjecteTasquesConnectionString"].ConnectionString;
-            //laMevaConnexioSQL = new SqlConnection(laMevaConnexio);
-
-            //MostraTasques();
-
-            Tasca benvinguda = new Tasca()
-            {
-                nom = "Benvingut/da",
-                descripcio = "Aquesta és una primera tasca de prova, la pots modificar tant com vulguis.",
-                colorEtiqueta = "#8f8c8d",
-                etiqueta = "Tutorial",
-                dataInici = "03/12/2025",
-                dataFinal = "03/12/2026",
-                estat = "Finalitzat",
-                colorEstat = "#55eb34"
-            };
-
-            llistaTasques.Items.Add(benvinguda);
-
-            for (int i = 0; i < 20; i++)
-            {
-                Tasca exemple = new Tasca()
-                {
-                    nom = i + ". Instal·lar el servidor DHCP",
-                    descripcio = "Realitzar tots els passos necessaris utilitzant linux",
-                    etiqueta = "Servidor",
-                    colorEtiqueta = "#fa5f5f",
-                    dataInici = "03/12/2025",
-                    dataFinal = "03/12/2025",
-                    estat = "Per començar",
-                    colorEstat = "#fa5f5f"
-                };
-
-                llistaTasques.Items.Add(exemple);
-
-            }
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e) 
+        { 
+            MostraTasques(); 
+        }
+
         private void llistaTasques_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            string color = (llistaTasques.SelectedItem as Tasca).colorEtiqueta;
-            SolidColorBrush pinzell = (SolidColorBrush)(new BrushConverter().ConvertFrom(color));
+            var tasca = llistaTasques.SelectedItem as Tasca;
+            if (tasca == null) return;
 
-            exNomTasca.Text = (llistaTasques.SelectedItem as Tasca).nom;
+            SolidColorBrush pinzell = (SolidColorBrush)(new BrushConverter().ConvertFrom(tasca.colorEtiqueta));
+
+            exNomTasca.Text = tasca.nom;
             exColorEtiqueta.Background = pinzell;
-            exEtiqueta.Text = (llistaTasques.SelectedItem as Tasca).etiqueta;
-            exDescripcio.Text = (llistaTasques.SelectedItem as Tasca).descripcio;
+            exEtiqueta.Text = tasca.etiqueta;
+            exDescripcio.Text = tasca.descripcio;
 
             exInici.Text = "Inici:";
-            exDataInici.Text = (llistaTasques.SelectedItem as Tasca).dataInici;
+            exDataInici.Text = tasca.dataInici;
 
             exFinal.Text = "Final:";
-            exDataFinal.Text = (llistaTasques.SelectedItem as Tasca).dataFinal;
+            exDataFinal.Text = tasca.dataFinal;
         }
 
         private void FinestraNovaTasca(object sender, RoutedEventArgs e)
         {
             NovaTasca nt = new NovaTasca();
+            nt.UsuariId = this.UsuariId;
 
             nt.TascaAfegida += (tasca) =>
             {
@@ -101,15 +60,12 @@ namespace AppTasques
             if (llistaTasques.SelectedItem == null)
             {
                 MessageBox.Show("Escull una tasca.");
+                return;
             }
 
-            else
-            {
-                Tasca tascaSeleccionada = llistaTasques.SelectedItem as Tasca;
-
-                EditarTasca et = new EditarTasca(tascaSeleccionada);
-                et.Show();
-            }                
+            Tasca tascaSeleccionada = llistaTasques.SelectedItem as Tasca;
+            EditarTasca et = new EditarTasca(tascaSeleccionada);
+            et.Show();
         }
 
         private void FinestraUsuaris(object sender, RoutedEventArgs e)
@@ -118,32 +74,44 @@ namespace AppTasques
             usuaris.Show();
         }
 
-        //private void MostraTasques()
-        //{
-        //    string consulta = "SELECT * FROM TASCA";
+        private void MostraTasques()
+        {
+            llistaTasques.Items.Clear();
 
-        //    SqlDataAdapter elMeuAdaptador = new SqlDataAdapter(consulta, laMevaConnexioSQL);
+            string cadena = "Server=ellaboratori.cat;Database=alex;Uid=alex;Pwd=1234";
 
-        //    using (elMeuAdaptador)
-        //    {
-        //        DataTable tasquesTaula = new DataTable();
+            using (MySqlConnection conexion = new MySqlConnection(cadena))
+            {
+                conexion.Open();
 
-        //        elMeuAdaptador.Fill(tasquesTaula);
+                string sql = @"SELECT nom, descripcio, etiqueta, colorEtiqueta, dataInici, dataFinal, estat 
+                               FROM Tasca 
+                               WHERE usuariId=@usuariId";
 
-        //        Tasca tascaSQL = new Tasca()
-        //        {
-        //            nom = "nom",
-        //            descripcio = "descripcio",
-        //            etiqueta = "etiqueta",
-        //            colorEtiqueta = "coloretiqueta",
-        //            dataInici = "datainici",
-        //            dataFinal = "datafinal",
-        //            estat = "estat",
-        //            colorEstat = "#fa5f5f"
-        //        };
+                using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
+                {
+                    cmd.Parameters.AddWithValue("@usuariId", UsuariId);
 
-        //        llistaTasques.Items.Add(tascaSQL);
-        //    }
-        //}
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Tasca tascaSQL = new Tasca()
+                            {
+                                nom = reader["nom"].ToString(),
+                                descripcio = reader["descripcio"].ToString(),
+                                etiqueta = reader["etiqueta"].ToString(),
+                                colorEtiqueta = reader["colorEtiqueta"].ToString(),
+                                dataInici = Convert.ToDateTime(reader["dataInici"]).ToString("dd/MM/yyyy"),
+                                dataFinal = Convert.ToDateTime(reader["dataFinal"]).ToString("dd/MM/yyyy"),
+                                estat = reader["estat"].ToString(),                            
+                            };
+
+                            llistaTasques.Items.Add(tascaSQL);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

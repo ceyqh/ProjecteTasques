@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 
 namespace AppTasques
 {
@@ -35,11 +36,35 @@ namespace AppTasques
             {
                 if (nouContrasenya.Password == nouConfirmarContrasenya.Password)
                 {
-                    llistaUsuaris.Items.Add(nouNom.Text);
+                    try
+                    {
 
-                    nouNom.Clear();
-                    nouContrasenya.Clear();
-                    nouConfirmarContrasenya.Clear();
+                        string cadena = "Server=ellaboratori.cat;Database=alex;Uid=alex;Pwd=1234";
+
+                        using (MySqlConnection conexion = new MySqlConnection(cadena))
+                        {
+                            conexion.Open();
+
+                            string sql = "INSERT INTO Usuari (nom, contrasenya) VALUES (@nom, @pass)";
+                            using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
+                            {
+                                cmd.Parameters.AddWithValue("@nom", nouNom.Text);
+                                cmd.Parameters.AddWithValue("@pass", nouContrasenya.Password);
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        llistaUsuaris.Items.Add(nouNom.Text);
+
+                        nouNom.Clear();
+                        nouContrasenya.Clear();
+                        nouConfirmarContrasenya.Clear();
+                        MessageBox.Show("Usuari afegit correctament.");
+                    }
+                    catch (Exception ex) 
+                    { 
+                        MessageBox.Show("Error al inserir usuari: " + ex.Message); 
+                    }
                 }
 
                 else

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 
 namespace AppTasques
 {
@@ -20,6 +21,7 @@ namespace AppTasques
     public partial class NovaTasca : Window
     {
         public event Action<Tasca> TascaAfegida;
+        public int UsuariId { get; set; }
 
         public NovaTasca()
         {
@@ -53,9 +55,46 @@ namespace AppTasques
                 colorEstat = valorColorEstat
             };
 
-            TascaAfegida?.Invoke(novaTasca);
+            try
+            {
+                string cadena = "Server=ellaboratori.cat;Database=alex;Uid=alex;Pwd=1234";
 
-            //this.Close();
+            using (MySqlConnection conexion = new MySqlConnection(cadena))
+            {
+                conexion.Open();
+
+                string sql = @"INSERT INTO Tasca 
+                   (nom, descripcio, etiqueta, colorEtiqueta, dataInici, dataFinal, estat, usuariId) 
+                   VALUES (@nom, @descripcio, @etiqueta, @colorEtiqueta, @dataInici, @dataFinal, @estat, @usuariId)";
+
+            using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
+            {
+                        DateTime inici = DateTime.ParseExact(txtInici.Text, "dd/MM/yyyy", null);
+                        DateTime final = DateTime.ParseExact(txtFinal.Text, "dd/MM/yyyy", null);
+
+                        cmd.Parameters.AddWithValue("@nom", novaTasca.nom);
+                        cmd.Parameters.AddWithValue("@descripcio", novaTasca.descripcio);
+                        cmd.Parameters.AddWithValue("@etiqueta", novaTasca.etiqueta);
+                        cmd.Parameters.AddWithValue("@colorEtiqueta", novaTasca.colorEtiqueta);
+                        cmd.Parameters.AddWithValue("@dataInici", inici.ToString("yyyy-MM-dd"));
+                        cmd.Parameters.AddWithValue("@dataFinal", final.ToString("yyyy-MM-dd"));
+                        cmd.Parameters.AddWithValue("@estat", novaTasca.estat);
+                        cmd.Parameters.AddWithValue("@colorEstat", novaTasca.colorEstat);
+                        cmd.Parameters.AddWithValue("@usuariId", UsuariId);
+
+                        cmd.ExecuteNonQuery();
+            }
+        }
+
+
+                MessageBox.Show("Tasca afegida correctament a la base de dades.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al inserir tasca: " + ex.Message);
+            }
+
+            TascaAfegida?.Invoke(novaTasca);
         }
     }
 }

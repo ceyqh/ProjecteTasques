@@ -1,22 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 
 namespace AppTasques
 {
-    /// <summary>
-    /// Lógica de interacción para Login.xaml
-    /// </summary>
     public partial class Login : Window
     {
         public Login()
@@ -26,9 +13,43 @@ namespace AppTasques
 
         private void Entrar(object sender, RoutedEventArgs e)
         {
-            MainWindow mw = new MainWindow();
-            mw.Show();
-            this.Close();
+            string cadena = "Server=ellaboratori.cat;Database=alex;Uid=alex;Pwd=1234";
+
+            try
+            {
+                using (MySqlConnection conexion = new MySqlConnection(cadena))
+                {
+                    conexion.Open();
+
+                    string sql = "SELECT COUNT(*) FROM Usuari WHERE nom=@nom AND contrasenya=@pass";
+                    using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@nom", txtNom.Text);          // TextBox del nombre
+                        cmd.Parameters.AddWithValue("@pass", txtContrasenya.Password); // PasswordBox de la contraseña
+
+
+                        int idUsuari = 1; // valor per defecte
+
+                        int existe = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        if (existe > 0)
+                        {
+                            MainWindow mw = new MainWindow();
+                            mw.UsuariId = idUsuari;
+                            mw.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuari o contrasenya incorrectes.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al connectar: " + ex.Message);
+            }
         }
     }
 }
