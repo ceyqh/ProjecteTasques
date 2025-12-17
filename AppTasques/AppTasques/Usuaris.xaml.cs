@@ -23,8 +23,30 @@ namespace AppTasques
         public Usuaris()
         {
             InitializeComponent();
+            MostrarUsuaris();
         }
 
+        private void MostrarUsuaris()
+        {
+            llistaUsuaris.Items.Clear();
+
+            string cadena = "Server=ellaboratori.cat;Database=alex;Uid=alex;Pwd=1234";
+            using (MySqlConnection conexion = new MySqlConnection(cadena))
+            {
+                conexion.Open();
+                    
+                string sql = "SELECT id, nom FROM Usuari";
+                using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string usuari = $"{reader["id"]} - {reader["nom"]}";
+                        llistaUsuaris.Items.Add(usuari);
+                    }
+                }
+            }
+        }
         private void AfegirUsuari(object sender, RoutedEventArgs e)
         {
             if (nouNom.Text == "" || nouContrasenya.Password == "" || nouConfirmarContrasenya.Password == "")

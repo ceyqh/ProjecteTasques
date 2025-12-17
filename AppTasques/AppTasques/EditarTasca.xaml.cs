@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace AppTasques
 {
@@ -25,7 +16,6 @@ namespace AppTasques
         {
             InitializeComponent();
             tascaSeleccionada = tasca;
-
             OmplirCamps();
         }
 
@@ -36,10 +26,38 @@ namespace AppTasques
             tascaSeleccionada.descripcio = edDescripcio.Text;
             tascaSeleccionada.estat = (edColorEstat.SelectedItem as ComboBoxItem)?.Content.ToString();
             tascaSeleccionada.colorEtiqueta = (edColorEtiqueta.SelectedItem as ComboBoxItem)?.Tag?.ToString();
+            tascaSeleccionada.dataInici = edInici.SelectedDate?.ToString("yyyy-MM-dd"); // formato MySQL
+            tascaSeleccionada.dataFinal = edFinal.SelectedDate?.ToString("yyyy-MM-dd");
 
-            tascaSeleccionada.dataInici = edInici.SelectedDate?.ToString("dd/MM/yyyy");
-            tascaSeleccionada.dataFinal = edFinal.SelectedDate?.ToString("dd/MM/yyyy");
+            
+            string cadena = "Server=ellaboratori.cat;Database=alex;Uid=alex;Pwd=1234";
 
+            using (MySqlConnection conexion = new MySqlConnection(cadena))
+            {
+                conexion.Open();
+
+                string sql = @"UPDATE Tasca 
+                               SET nom=@nom, descripcio=@descripcio, etiqueta=@etiqueta, 
+                                   colorEtiqueta=@colorEtiqueta, dataInici=@dataInici, 
+                                   dataFinal=@dataFinal, estat=@estat
+                               WHERE id=@id";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
+                {
+                    cmd.Parameters.AddWithValue("@nom", tascaSeleccionada.nom);
+                    cmd.Parameters.AddWithValue("@descripcio", tascaSeleccionada.descripcio);
+                    cmd.Parameters.AddWithValue("@etiqueta", tascaSeleccionada.etiqueta);
+                    cmd.Parameters.AddWithValue("@colorEtiqueta", tascaSeleccionada.colorEtiqueta);
+                    cmd.Parameters.AddWithValue("@dataInici", tascaSeleccionada.dataInici);
+                    cmd.Parameters.AddWithValue("@dataFinal", tascaSeleccionada.dataFinal);
+                    cmd.Parameters.AddWithValue("@estat", tascaSeleccionada.estat);
+                    cmd.Parameters.AddWithValue("@id", 1);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+            MessageBox.Show("Tasca actualitzada correctament.");
             this.Close();
         }
 
@@ -56,7 +74,7 @@ namespace AppTasques
 
             if (DateTime.TryParse(tascaSeleccionada.dataFinal, out DateTime final))
             {
-                edInici.SelectedDate = final;
+                edFinal.SelectedDate = final; // corregido: antes ponías edInici
             }
 
             foreach (ComboBoxItem item in edColorEstat.Items)
@@ -75,7 +93,6 @@ namespace AppTasques
                     break;
                 }
             }
-
         }
     }
 }

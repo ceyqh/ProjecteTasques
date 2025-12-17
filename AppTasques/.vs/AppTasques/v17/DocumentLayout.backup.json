@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\apptasques\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|c:\\users\\alex campos\\documents\\escritorio_este_a\u00F1o_nose\\projectekanban2\\projectetasques\\apptasques\\apptasques\\editartasca.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\editartasca.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\apptasques\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\apptasques\\usuaris.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\usuaris.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|c:\\users\\alex campos\\documents\\escritorio_este_a\u00F1o_nose\\projectekanban2\\projectetasques\\apptasques\\apptasques\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\apptasques\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\apptasques\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\apptasques\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\apptasques\\usuaris.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|solutionrelative:apptasques\\usuaris.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3FF57A5F-ADC0-422C-BB93-607061FBB7F5}|AppTasques\\AppTasques.csproj|C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\apptasques\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -58,62 +58,37 @@
       "DocumentGroups": [
         {
           "DockedHeight": 379,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EditarTasca.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\EditarTasca.xaml.cs",
               "RelativeDocumentMoniker": "AppTasques\\EditarTasca.xaml.cs",
-              "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\EditarTasca.xaml.cs",
-              "RelativeToolTip": "AppTasques\\EditarTasca.xaml.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAADwv0MAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\EditarTasca.xaml.cs*",
+              "RelativeToolTip": "AppTasques\\EditarTasca.xaml.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T16:22:09.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Login.xaml",
-              "RelativeDocumentMoniker": "AppTasques\\Login.xaml",
-              "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Login.xaml",
-              "RelativeToolTip": "AppTasques\\Login.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-16T18:21:04.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Login.xaml.cs",
-              "RelativeDocumentMoniker": "AppTasques\\Login.xaml.cs",
-              "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Login.xaml.cs",
-              "RelativeToolTip": "AppTasques\\Login.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowB4AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T15:14:39.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "AppTasques\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\MainWindow.xaml.cs",
               "RelativeToolTip": "AppTasques\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA0wBYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwEQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T16:26:22.411Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\MainWindow.xaml",
               "RelativeDocumentMoniker": "AppTasques\\MainWindow.xaml",
@@ -137,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "NovaTasca.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\NovaTasca.xaml.cs",
               "RelativeDocumentMoniker": "AppTasques\\NovaTasca.xaml.cs",
@@ -145,12 +120,11 @@
               "RelativeToolTip": "AppTasques\\NovaTasca.xaml.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAwwEYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:44:49.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T16:44:49.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "NovaTasca.xaml",
               "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\NovaTasca.xaml",
               "RelativeDocumentMoniker": "AppTasques\\NovaTasca.xaml",
@@ -174,6 +148,43 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuaris.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Usuaris.xaml.cs",
+              "RelativeDocumentMoniker": "AppTasques\\Usuaris.xaml.cs",
+              "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Usuaris.xaml.cs",
+              "RelativeToolTip": "AppTasques\\Usuaris.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswCQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T15:20:12.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "AppTasques\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Login.xaml.cs",
+              "RelativeToolTip": "AppTasques\\Login.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowB4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T15:14:39.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Login.xaml",
+              "RelativeDocumentMoniker": "AppTasques\\Login.xaml",
+              "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Login.xaml",
+              "RelativeToolTip": "AppTasques\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-16T18:21:04.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Usuaris.xaml",
               "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Usuaris.xaml",
@@ -181,19 +192,7 @@
               "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Usuaris.xaml",
               "RelativeToolTip": "AppTasques\\Usuaris.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-16T15:20:31.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Usuaris.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Usuaris.xaml.cs",
-              "RelativeDocumentMoniker": "AppTasques\\Usuaris.xaml.cs",
-              "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\Usuaris.xaml.cs",
-              "RelativeToolTip": "AppTasques\\Usuaris.xaml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwC0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T15:20:12.314Z",
+              "WhenOpened": "2025-12-16T15:20:31.046Z",
               "EditorCaption": ""
             },
             {
@@ -205,7 +204,8 @@
               "ToolTip": "C:\\Users\\Alex Campos\\Documents\\ESCRITORIO_ESTE_A\u00D1O_NOSE\\ProjecteKanban2\\ProjecteTasques\\AppTasques\\AppTasques\\EditarTasca.xaml",
               "RelativeToolTip": "AppTasques\\EditarTasca.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-15T09:41:46.992Z"
+              "WhenOpened": "2025-12-15T09:41:46.992Z",
+              "EditorCaption": ""
             }
           ]
         }

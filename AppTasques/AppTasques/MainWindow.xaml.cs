@@ -65,7 +65,8 @@ namespace AppTasques
 
             Tasca tascaSeleccionada = llistaTasques.SelectedItem as Tasca;
             EditarTasca et = new EditarTasca(tascaSeleccionada);
-            et.Show();
+            et.ShowDialog();
+            MostraTasques();
         }
 
         private void FinestraUsuaris(object sender, RoutedEventArgs e)
