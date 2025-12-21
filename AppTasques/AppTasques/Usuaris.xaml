@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppTasques"
         mc:Ignorable="d"
-        Title="Usuaris" Height="550" Width="300">
+        Title="Usuaris" Height="670" Width="300">
+    
     <Window.Resources>
         <Style x:Key="HoverButton" TargetType="Button">
             <Setter Property="Background" Value="#FF272727"/>
@@ -44,23 +45,111 @@
             </Setter>
         </Style>
     </Window.Resources>
-    
-    <Grid Background="#FFEFEFEA">
-        <StackPanel Margin="10"  Background="#FFEFEFEA">
+
+    <StackPanel Background="#FFEFEFEA">
+    <Grid Background="#FFEFEFEA" Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
             <TextBlock FontWeight="Bold" Margin="0, 0, 0, 10" FontSize="30">Usuaris:</TextBlock>
-            <ListBox x:Name="llistaUsuaris" Height="200" Background="#FFEFEFEA" FontSize="15"></ListBox>
+            <ListView x:Name="llistaUsuaris"
+                      Margin="0, 10, 0, 0"
+                      Grid.Row="1"
+                      Foreground="#FF272727"
+                      BorderBrush="#FF272727"
+                      Background="#FFEFEFEA">
+                
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Background" Value="#FFEFEFEA"/>
+                        <Setter Property="Foreground" Value="#FF272727"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="Padding" Value="0"/>
+                        <Setter Property="Margin" Value="0"/>
+                        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListViewItem">
 
-            <TextBlock Margin="0, 10, 0, 10" FontSize="15">Nom:</TextBlock>
-            <TextBox x:Name="nouNom" Margin="0,0,0,10" FontSize="15" Background="#FFEFEFEA" BorderBrush="#272727" Foreground="#FF272727"/>
+                                    <Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="Transparent"
+                                BorderThickness="0"
+                                SnapsToDevicePixels="True">
 
-            <TextBlock Margin="0, 0, 0, 10" FontSize="15">Contrasenya:</TextBlock>
-            <PasswordBox x:Name="nouContrasenya" Margin="0,0,0,10" FontSize="15" Background="#FFEFEFEA" BorderBrush="#272727" Foreground="#FF272727"/>
+                                        <ContentPresenter Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                                    </Border>
 
-            <TextBlock Margin="0, 0, 0, 10" FontSize="15">Confirmar contrasenya:</TextBlock>
-            <PasswordBox x:Name="nouConfirmarContrasenya" Margin="0,0,0,10" FontSize="15" Background="#FFEFEFEA" BorderBrush="#272727" Foreground="#FF272727"/>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="border" Property="Background" Value="#FF272727"/>
+                                            <Setter Property="Foreground" Value="#FFEFEFEA"/>
+                                        </Trigger>
 
-            <Button FontSize="15" Width="80" Style="{StaticResource HoverButton}" Click="AfegirUsuari" Margin="0, 10, 0, 0" >Afegir</Button>
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <Setter TargetName="border" Property="Background" Value="#FF272727"/>
+                                            <Setter Property="Foreground" Value="#FFEFEFEA"/>
+                                        </Trigger>
 
-        </StackPanel>        
+                                    </ControlTemplate.Triggers>
+
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock FontSize="15" Grid.Column="0" Margin="0, 0, 10, 0" Text="{Binding Id}"/>
+                            <TextBlock FontSize="15" Grid.Column="1" Margin="0, 0, 10, 0" Text="{Binding NomUsuari}"/>
+                            <TextBlock FontSize="15" Grid.Column="2" Text="{Binding RolUsuari}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <TextBlock Margin="0, 10, 0, 10" FontSize="15" Grid.Row="2">Nom:</TextBlock>
+            <TextBox Grid.Row="3" x:Name="nouNom" Margin="0,0,0,10" FontSize="15" Background="#FFEFEFEA" BorderBrush="#272727" Foreground="#FF272727"/>
+
+            <TextBlock Grid.Row="4" Margin="0, 0, 0, 10" FontSize="15">Contrasenya:</TextBlock>
+            <PasswordBox Grid.Row="5" x:Name="nouContrasenya" Margin="0,0,0,10" FontSize="15" Background="#FFEFEFEA" BorderBrush="#272727" Foreground="#FF272727"/>
+
+            <TextBlock Grid.Row="6" Margin="0, 0, 0, 10" FontSize="15">Confirmar contrasenya:</TextBlock>
+            <PasswordBox Grid.Row="7" x:Name="nouConfirmarContrasenya" Margin="0,0,0,10" FontSize="15" Background="#FFEFEFEA" BorderBrush="#272727" Foreground="#FF272727"/>
+
+            <TextBlock Grid.Row="8" Margin="0, 0, 0, 10" FontSize="15">Rol:</TextBlock>
+            <ComboBox Grid.Row="9" x:Name="cbColorEtiqueta" Margin="0,0,0,10" FontSize="15" SelectedIndex="0">
+                <ComboBoxItem Content="Usuari" Tag="usuari"/>
+                <ComboBoxItem Content="Administrador" Tag="administrador"/>
+                <ComboBoxItem Content="Supervisor" Tag="supervisor"/>
+            </ComboBox>
+
+        <Grid Margin="0, 20, 0, 0" Grid.Row="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button FontSize="15" Width="80" Style="{StaticResource HoverButton}" Click="AfegirUsuari" Grid.Column="0">Afegir</Button>
+            <Button FontSize="15" Width="80" Style="{StaticResource HoverButton}" Click="EsborrarUsuari" Grid.Column="1">Esborrar</Button>
+        </Grid>
     </Grid>
+    </StackPanel>
 </Window>

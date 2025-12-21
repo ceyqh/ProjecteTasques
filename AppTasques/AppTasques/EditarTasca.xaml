@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppTasques"
         mc:Ignorable="d"
-        Title="EditarTasca" Height="750" Width="800">
+        Title="EditarTasca" Height="680" Width="500">
     <Window.Resources>
         <Style x:Key="HoverButton" TargetType="Button">
             <Setter Property="Background" Value="#FF272727"/>
@@ -89,8 +89,7 @@
                 <ComboBoxItem Content="Finalitzat"/>
             </ComboBox>
 
-            <Button FontSize="15" Width="100" Click="Guardar" Style="{StaticResource HoverButton}">Guardar</Button>
-            <Button FontSize="15" Width="100" Style="{StaticResource HoverButton}">Esborrar</Button>
+            <Button Margin="0, 20, 0, 0" FontSize="15" Width="100" Click="Guardar" Style="{StaticResource HoverButton}">Guardar</Button>
         </StackPanel>
     </Grid>
 </Window>

@@ -52,23 +52,24 @@ namespace AppTasques
                 dataInici = txtInici.Text,
                 dataFinal = txtFinal.Text,
                 estat = tagColorEstat,
-                colorEstat = valorColorEstat
+                colorEstat = valorColorEstat,
+                usuariId = UsuariId
             };
 
             try
             {
                 string cadena = "Server=ellaboratori.cat;Database=alex;Uid=alex;Pwd=1234";
 
-            using (MySqlConnection conexion = new MySqlConnection(cadena))
-            {
-                conexion.Open();
+                using (MySqlConnection conexion = new MySqlConnection(cadena))
+                {
+                    conexion.Open();
 
-                string sql = @"INSERT INTO Tasca 
-                   (nom, descripcio, etiqueta, colorEtiqueta, dataInici, dataFinal, estat, usuariId) 
-                   VALUES (@nom, @descripcio, @etiqueta, @colorEtiqueta, @dataInici, @dataFinal, @estat, @usuariId)";
+                    string sql = @"INSERT INTO Tasca 
+                        (nom, descripcio, etiqueta, colorEtiqueta, dataInici, dataFinal, estat, usuariId) 
+                        VALUES (@nom, @descripcio, @etiqueta, @colorEtiqueta, @dataInici, @dataFinal, @estat, @usuariId)";
 
-            using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
-            {
+                    using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
+                    {
                         DateTime inici = DateTime.ParseExact(txtInici.Text, "dd/MM/yyyy", null);
                         DateTime final = DateTime.ParseExact(txtFinal.Text, "dd/MM/yyyy", null);
 
@@ -83,11 +84,10 @@ namespace AppTasques
                         cmd.Parameters.AddWithValue("@usuariId", UsuariId);
 
                         cmd.ExecuteNonQuery();
-            }
-        }
 
-
-                MessageBox.Show("Tasca afegida correctament a la base de dades.");
+                        this.Close();
+                    }
+                }            
             }
             catch (Exception ex)
             {

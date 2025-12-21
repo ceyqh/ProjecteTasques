@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppTasques"
         mc:Ignorable="d"
-        Title="NovaTasca" Height="750" Width="500">
+        Title="NovaTasca" Height="670" Width="500">
 
     <Window.Resources>
         <Style x:Key="HoverButton" TargetType="Button">
@@ -58,7 +58,7 @@
 
             <TextBlock Margin="0,0,0,5" FontSize="15">Color etiqueta:</TextBlock>
             <ComboBox x:Name="cbColorEtiqueta" Margin="0,0,0,10" FontSize="15" SelectedIndex="0">
-                <ComboBoxItem Content="Cap" Tag=""/>
+                <ComboBoxItem Content="Cap" Tag="#FFEFEFEA"/>
                 <ComboBoxItem Content="Vermell" Tag="#fa5f5f"/>
                 <ComboBoxItem Content="Verd" Tag="#55eb34"/>
                 <ComboBoxItem Content="Blau" Tag="#489bfa"/>
@@ -82,7 +82,7 @@
             <DatePicker x:Name="txtFinal" Margin="0,0,0,20" FontSize="15" BorderBrush="#272727" Foreground="#FF272727" Background="#FFEFEFEA"/>
 
             <TextBlock Margin="0,0,0,5" FontSize="15">Estat:</TextBlock>
-            <ComboBox x:Name="cbColorEstat" Margin="0,0,0,10" FontSize="15" SelectedIndex="0">
+            <ComboBox x:Name="cbColorEstat" Margin="0,0,0,30" FontSize="15" SelectedIndex="0">
                 <ComboBoxItem Content="Per començar"/>
                 <ComboBoxItem Content="Començat"/>
                 <ComboBoxItem Content="Repassar"/>

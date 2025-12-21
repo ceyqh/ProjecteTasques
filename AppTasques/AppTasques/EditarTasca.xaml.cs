@@ -5,11 +5,10 @@ using System.Windows.Controls;
 
 namespace AppTasques
 {
-    /// <summary>
-    /// Lógica de interacción para EditarTasca.xaml
-    /// </summary>
     public partial class EditarTasca : Window
     {
+        public event Action<Tasca> TascaActualitzada;
+
         private Tasca tascaSeleccionada;
 
         public EditarTasca(Tasca tasca)
@@ -26,7 +25,7 @@ namespace AppTasques
             tascaSeleccionada.descripcio = edDescripcio.Text;
             tascaSeleccionada.estat = (edColorEstat.SelectedItem as ComboBoxItem)?.Content.ToString();
             tascaSeleccionada.colorEtiqueta = (edColorEtiqueta.SelectedItem as ComboBoxItem)?.Tag?.ToString();
-            tascaSeleccionada.dataInici = edInici.SelectedDate?.ToString("yyyy-MM-dd"); // formato MySQL
+            tascaSeleccionada.dataInici = edInici.SelectedDate?.ToString("yyyy-MM-dd");
             tascaSeleccionada.dataFinal = edFinal.SelectedDate?.ToString("yyyy-MM-dd");
 
             
@@ -36,11 +35,10 @@ namespace AppTasques
             {
                 conexion.Open();
 
-                string sql = @"UPDATE Tasca 
-                               SET nom=@nom, descripcio=@descripcio, etiqueta=@etiqueta, 
-                                   colorEtiqueta=@colorEtiqueta, dataInici=@dataInici, 
-                                   dataFinal=@dataFinal, estat=@estat
-                               WHERE id=@id";
+                string sql = @"UPDATE Tasca SET nom=@nom, descripcio=@descripcio, etiqueta=@etiqueta, 
+                           colorEtiqueta=@colorEtiqueta, dataInici=@dataInici, 
+                           dataFinal=@dataFinal, estat=@estat
+                           WHERE id=@id";
 
                 using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
                 {
@@ -51,13 +49,13 @@ namespace AppTasques
                     cmd.Parameters.AddWithValue("@dataInici", tascaSeleccionada.dataInici);
                     cmd.Parameters.AddWithValue("@dataFinal", tascaSeleccionada.dataFinal);
                     cmd.Parameters.AddWithValue("@estat", tascaSeleccionada.estat);
-                    cmd.Parameters.AddWithValue("@id", 1);
-
+                    cmd.Parameters.AddWithValue("@id", tascaSeleccionada.id);
                     cmd.ExecuteNonQuery();
                 }
             }
 
-            MessageBox.Show("Tasca actualitzada correctament.");
+            TascaActualitzada?.Invoke(tascaSeleccionada);
+
             this.Close();
         }
 
@@ -74,7 +72,7 @@ namespace AppTasques
 
             if (DateTime.TryParse(tascaSeleccionada.dataFinal, out DateTime final))
             {
-                edFinal.SelectedDate = final; // corregido: antes ponías edInici
+                edFinal.SelectedDate = final;
             }
 
             foreach (ComboBoxItem item in edColorEstat.Items)

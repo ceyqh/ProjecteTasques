@@ -119,6 +119,7 @@
       <DependentUpon>ProjecteTasquesDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Tasca.cs" />
+    <Compile Include="Usuari.cs" />
     <Compile Include="Usuaris.xaml.cs">
       <DependentUpon>Usuaris.xaml</DependentUpon>
     </Compile>

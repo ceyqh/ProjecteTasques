@@ -11,6 +11,8 @@ namespace AppTasques
             InitializeComponent();
         }
 
+        // LOGIN
+
         private void Entrar(object sender, RoutedEventArgs e)
         {
             string cadena = "Server=ellaboratori.cat;Database=alex;Uid=alex;Pwd=1234";
@@ -21,24 +23,46 @@ namespace AppTasques
                 {
                     conexion.Open();
 
+                    // Comptar els usuaris que coincideixen amb la contrasenya
+
                     string sql = "SELECT COUNT(*) FROM Usuari WHERE nom=@nom AND contrasenya=@pass";
                     using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
                     {
-                        cmd.Parameters.AddWithValue("@nom", txtNom.Text);          // TextBox del nombre
-                        cmd.Parameters.AddWithValue("@pass", txtContrasenya.Password); // PasswordBox de la contraseña
+                        cmd.Parameters.AddWithValue("@nom", txtNom.Text);
+                        cmd.Parameters.AddWithValue("@pass", txtContrasenya.Password);
 
+                        int existeix = Convert.ToInt32(cmd.ExecuteScalar());
 
-                        int idUsuari = 1; // valor per defecte
+                        // Si el recompte és > 0 vol dir que existeix
 
-                        int existe = Convert.ToInt32(cmd.ExecuteScalar());
-
-                        if (existe > 0)
+                        if (existeix > 0)
                         {
-                            MainWindow mw = new MainWindow();
-                            mw.UsuariId = idUsuari;
-                            mw.Show();
-                            this.Close();
+                            string sql2 = "SELECT id, nom, rol FROM Usuari WHERE nom=@nom AND contrasenya=@pass LIMIT 1";
+
+                            using (MySqlCommand cmd2 = new MySqlCommand(sql2, conexion))
+                            {
+                                cmd2.Parameters.AddWithValue("@nom", txtNom.Text);
+                                cmd2.Parameters.AddWithValue("@pass", txtContrasenya.Password);
+
+                                using (MySqlDataReader reader = cmd2.ExecuteReader())
+                                {
+                                    if (reader.Read())
+                                    {
+                                        int idUsuari = reader.GetInt32("id");
+                                        string nomUsuari = reader.GetString("nom");
+                                        string nomRol= reader.GetString("rol");
+
+                                        MainWindow mw = new MainWindow();
+                                        mw.UsuariId = idUsuari;
+                                        mw.UsuariNom = nomUsuari;
+                                        mw.UsuariRol = nomRol;
+                                        mw.Show();
+                                        this.Close();
+                                    }
+                                }
+                            }
                         }
+
                         else
                         {
                             MessageBox.Show("Usuari o contrasenya incorrectes.");
